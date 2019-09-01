@@ -1,5 +1,5 @@
 This isa fork of of https://github.com/makerbase-mks/MKS-Robin (Marlin 2.0/MKS Robin Lite motherboard) to work with ADIMLab Gantry S 3D printer. 
-Please refere to http://marlinfw.org/ for details about Marlin 2.o firmware and code.
+For the instructions to build the code,please refere to http://marlinfw.org. 
 The details about MKS Robin Lite motherboard can be found at https://github.com/makerbase-mks/MKS-Robin.
 
 
