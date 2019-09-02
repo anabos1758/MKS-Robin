@@ -92,6 +92,6 @@
    * The WEBSITE_URL is the location where users can get more information such as
    * documentation about a specific Marlin release.
    */
-  #define WEBSITE_URL "http://marlinfw.org"
+  #define WEBSITE_URL "https://github.com/anabos1758/MKS-Robin"
 
 #endif // USE_AUTOMATIC_VERSIONING
