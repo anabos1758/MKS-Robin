@@ -16,3 +16,17 @@ Mks-Robin Lite: Robin_Lite.bin
   2.3.Multi-language:Chinese;English
   2.4.Continue printing after power off
   2.5.Dislay:LCD
+
+================================================================================================================================================
+The build may fail with the following error.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+.piolibdeps/mks_robin_lite/TMCStepper_ID5513/src/source/CHOPCONF.cpp:1:0:
+.piolibdeps/mks_robin_lite/TMCStepper_ID5513/src/TMCStepper.h:18:11: fatal error: SoftwareSerial.h: No such file or directory
+------------------------------------------------------------------------------------------------------------------------------------------------
+To fix the complier error:
+Open the the file ../MKS-Robin/MKS Robin Lite/firmware/Marlin2.0-MKS-Robin_lite/.piolibdeps/mks_robin_lite/TMCStepper_ID5513/src/TMCStepper.h
+Find the line with #define SW_CAPABLE_PLATFORM defined.
+Comment the | defined(ARDUINO_ARCH_STM32F1) as shown below.
+#define SW_CAPABLE_PLATFORM defined(__AVR__) || defined(TARGET_LPC1768) || defined(ARDUINO_ARCH_ESP32) //|| defined(ARDUINO_ARCH_STM32F1) 
+Details of the issue canbe found in Marlin Firmware's GitHub. However the MKS RObin Lite repo does not have the fix yet.
+================================================================================================================================================
