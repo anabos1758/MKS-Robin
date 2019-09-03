@@ -71,7 +71,7 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN       PC9
-//#define FAN_PIN            PA8
+#define FAN_PIN            PA8
 #define HEATER_BED_PIN     PC8
 
 //
@@ -143,3 +143,5 @@
 #ifndef ST7920_DELAY_3
   #define ST7920_DELAY_3 DELAY_NS(125)
 #endif
+
+#define SERVO0_PIN PC11 //WIFI IO2 PIN
